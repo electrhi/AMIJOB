@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지원서 양식 — AMIJOB</title>
+  <meta name="description" content="AMIJOB 공통 지원서 양식 (인쇄용)" />
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #64748b;
+      --line: #cbd5e1;
+      --line-soft: #e2e8f0;
+      --accent: #1e40af;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eef2f7;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Noto Sans KR", "Malgun Gothic", sans-serif;
+      color: var(--ink);
+      line-height: 1.5;
+      padding: 32px 16px;
+    }
+
+    /* Toolbar (hidden in print) */
+    .toolbar {
+      max-width: 800px;
+      margin: 0 auto 16px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .toolbar h1 {
+      font-size: 0.95rem;
+      margin: 0;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .toolbar-actions { display: flex; gap: 8px; }
+    .tb-btn {
+      background: var(--accent);
+      color: #fff;
+      border: 0;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .tb-btn.ghost {
+      background: #fff;
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+    .tb-btn:hover { opacity: 0.92; }
+
+    /* Page (A4-ish) */
+    .page {
+      background: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px 56px 64px;
+      box-shadow: 0 20px 60px -20px rgba(15,23,42,0.18);
+    }
+
+    .doc-head {
+      text-align: center;
+      padding-bottom: 18px;
+      border-bottom: 3px double var(--ink);
+      margin-bottom: 28px;
+    }
+    .doc-head h1 {
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: 0.5em;
+      padding-left: 0.5em;
+      font-weight: 800;
+    }
+    .doc-head .sub {
+      margin-top: 6px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    .meta-strip {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    section { margin-bottom: 22px; }
+
+    .sec-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--accent);
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 10px;
+      letter-spacing: 0.04em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    table th, table td {
+      border: 1px solid var(--line);
+      padding: 9px 12px;
+      vertical-align: middle;
+    }
+    table th {
+      background: #f1f5f9;
+      width: 110px;
+      font-weight: 700;
+      text-align: left;
+      color: var(--ink);
+    }
+    table td.empty {
+      min-height: 28px;
+      height: 28px;
+    }
+    table td input[type="text"],
+    table td input[type="email"],
+    table td input[type="tel"],
+    table td input[type="date"] {
+      border: 0;
+      width: 100%;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 4px 0;
+      color: var(--ink);
+      background: transparent;
+      outline: none;
+    }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .grid-2 > table:first-child th { border-right: none; }
+
+    .photo-cell {
+      width: 90px;
+      text-align: center;
+      vertical-align: middle;
+      background: repeating-linear-gradient(
+        45deg, #f8fafc, #f8fafc 8px, #f1f5f9 8px, #f1f5f9 16px
+      );
+      font-size: 0.78rem;
+      color: var(--muted);
+      height: 110px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      border: 1px solid var(--line);
+      border-top: none;
+    }
+    .row:first-of-type { border-top: 1px solid var(--line); }
+    .row .label { background: #f1f5f9; padding: 9px 12px; font-weight: 700; font-size: 0.92rem; border-right: 1px solid var(--line); }
+    .row .value { padding: 9px 12px; font-size: 0.92rem; min-height: 30px; }
+    .row .value input { border: 0; outline: 0; width: 100%; font-family: inherit; font-size: inherit; padding: 4px 0; background: transparent; }
+
+    .essay {
+      border: 1px solid var(--line);
+      padding: 12px 14px;
+      min-height: 130px;
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          transparent 0,
+          transparent 26px,
+          var(--line-soft) 26px,
+          var(--line-soft) 27px
+        );
+      line-height: 27px;
+      font-size: 0.92rem;
+      color: var(--ink);
+      outline: none;
+    }
+    .essay[contenteditable="true"]:empty::before {
+      content: attr(data-placeholder);
+      color: var(--muted);
+    }
+
+    .signature {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 0.95rem;
+      line-height: 2;
+    }
+    .signature .line {
+      display: inline-block;
+      width: 240px;
+      border-bottom: 1px solid var(--ink);
+      margin: 0 8px;
+    }
+    .signature strong {
+      letter-spacing: 0.3em;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+    .signature .date {
+      margin-top: 18px;
+      display: block;
+      color: var(--muted);
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--line);
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .toolbar { display: none !important; }
+      .page {
+        max-width: none;
+        margin: 0;
+        padding: 24mm 18mm;
+        box-shadow: none;
+      }
+      .essay[contenteditable="true"]:empty::before { content: ""; }
+      @page { size: A4; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <h1>AMIJOB · 표준 지원서 양식</h1>
+    <div class="toolbar-actions">
+      <button class="tb-btn ghost" onclick="history.length>1?history.back():window.close()">← 돌아가기</button>
+      <button class="tb-btn" onclick="window.print()">🖨️ 인쇄 / PDF 저장</button>
+    </div>
+  </div>
+
+  <article class="page">
+    <header class="doc-head">
+      <h1>지 원 서</h1>
+      <div class="sub">APPLICATION FORM</div>
+    </header>
+
+    <div class="meta-strip">
+      <span>제출일: <input type="date" style="border:0;font-family:inherit;font-size:inherit;color:inherit;background:transparent;" /></span>
+      <span>지원 분야: <input type="text" placeholder="예: AMI 운영" style="border:0;border-bottom:1px dashed var(--line);font-family:inherit;font-size:inherit;padding:2px 6px;min-width:140px;outline:none;" /></span>
+    </div>
+
+    <!-- 인적사항 -->
+    <section>
+      <h2 class="sec-title">1. 인적 사항</h2>
+      <table>
+        <colgroup>
+          <col style="width:110px" /><col /><col style="width:110px" /><col /><col class="photo-cell" />
+        </colgroup>
+        <tr>
+          <th>성명 (한글)</th>
+          <td><input type="text" /></td>
+          <th>성명 (영문)</th>
+          <td><input type="text" /></td>
+          <td rowspan="4" class="photo-cell">사진<br/>(3 × 4 cm)</td>
+        </tr>
+        <tr>
+          <th>생년월일</th>
+          <td><input type="date" /></td>
+          <th>성별</th>
+          <td><input type="text" placeholder="남 / 여" /></td>
+        </tr>
+        <tr>
+          <th>휴대전화</th>
+          <td><input type="tel" placeholder="010-0000-0000" /></td>
+          <th>이메일</th>
+          <td><input type="email" placeholder="example@email.com" /></td>
+        </tr>
+        <tr>
+          <th>주소</th>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 학력 -->
+    <section>
+      <h2 class="sec-title">2. 학력 사항</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>재학 기간</th>
+            <th>학교명</th>
+            <th>전공</th>
+            <th>학점</th>
+            <th>졸업 여부</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" placeholder="2018.03 ~ 2022.02" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td><td><input type="text" /></td>
+            <td><input type="text" /></td><td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td><td><input type="text" /></td>
+            <td><input type="text" /></td><td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 경력 -->
+    <section>
+      <h2 class="sec-title">3. 경력 사항</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>근무 기간</th>
+            <th>기관/회사명</th>
+            <th>부서/직위</th>
+            <th>담당 업무</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" placeholder="2022.03 ~ 현재" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td><td><input type="text" /></td>
+            <td><input type="text" /></td><td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td><td><input type="text" /></td>
+            <td><input type="text" /></td><td><input type="text" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 자격증 -->
+    <section>
+      <h2 class="sec-title">4. 자격증 / 면허</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>자격증명</th>
+            <th>발급 기관</th>
+            <th>취득일</th>
+            <th>유효기간</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" placeholder="YYYY.MM" /></td><td><input type="text" /></td></tr>
+          <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td></tr>
+          <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 자기소개서 -->
+    <section>
+      <h2 class="sec-title">5. 자기소개서</h2>
+      <div style="font-size:.86rem;color:var(--muted);margin-bottom:6px;">지원 동기와 입사 후 포부를 자유롭게 작성해 주세요.</div>
+      <div class="essay" contenteditable="true" data-placeholder="여기에 자기소개를 작성하세요. 인쇄/PDF 저장 시 입력한 내용이 함께 출력됩니다."></div>
+    </section>
+
+    <!-- 서명 -->
+    <div class="signature">
+      <span class="date">작성일: <input type="date" style="border:0;font-family:inherit;font-size:inherit;color:inherit;background:transparent;" /></span>
+      <div style="margin-top:14px;">
+        위 기재 사항이 사실과 다름이 없음을 확인합니다.
+      </div>
+      <div style="margin-top:20px;">
+        <span>지원자</span>
+        <span class="line"></span>
+        <strong>(인)</strong>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      ※ 본 양식은 AMIJOB이 제공하는 표준 지원서입니다. 실제 채용 절차에는 각 기관(한전KDN, 한국전력공사, 한국가스공사 등)이 요구하는 공식 양식이 별도로 있을 수 있으니, 알리오 공고를 함께 확인해 주세요.<br/>
+      ※ 인쇄 또는 PDF 저장 시 작성한 내용이 함께 출력됩니다.
+    </div>
+  </article>
+
+  <script>
+    // Default date today
+    document.querySelectorAll('input[type="date"]').forEach((d) => {
+      if (!d.value) d.value = new Date().toISOString().slice(0, 10);
+    });
+  </script>
+</body>
+</html>

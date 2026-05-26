@@ -1,0 +1,12 @@
+﻿# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local server
+__pycache__/

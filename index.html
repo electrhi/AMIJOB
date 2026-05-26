@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMIJOB · AMI 작업원 채용정보</title>
+  <meta name="description" content="알리오에 등재된 AMI(스마트미터링) 분야 채용 정보를 한 곳에서. 분야·지역·채용인원·경력별 필터로 가장 잘 맞는 공고를 빠르게 찾으세요." />
+  <meta property="og:title" content="AMIJOB — AMI 작업원 채용 통합 정보" />
+  <meta property="og:description" content="알리오 AMI 채용 공고, 분야별/지역별 필터링, 지원서 다운로드까지 한곳에서." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Top Nav ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="AMIJOB 홈">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+          </svg>
+        </span>
+        <span class="brand-name">AMI<b>JOB</b></span>
+      </a>
+
+      <nav class="nav-links" aria-label="주 메뉴">
+        <a href="#jobs">전체 공고</a>
+        <a href="#stats">한눈에</a>
+        <a href="#about">소개</a>
+        <a href="application-form.html" target="_blank">지원서</a>
+      </nav>
+
+      <div class="nav-cta">
+        <span class="nav-meta" id="lastUpdatedNav">데이터 업데이트: <time></time></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero / Search ===== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container hero-content">
+        <span class="badge">
+          <span class="badge-dot"></span>
+          ALIO 공공기관 채용정보 기반
+        </span>
+        <h1>
+          AMI 작업원 채용,<br />
+          <span class="gradient-text">한 화면에서 끝낸다.</span>
+        </h1>
+        <p class="hero-tagline">
+          알리오에 흩어진 스마트미터링·검침·통신·시공 채용 공고를
+          분야와 채용인원으로 필터링해 한 번에 비교하세요.
+        </p>
+
+        <form class="search" id="searchForm" role="search" onsubmit="return false;">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+            </svg>
+          </span>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="직무, 기관, 지역으로 검색 (예: 시공, KDN, 대전)"
+            autocomplete="off"
+            aria-label="채용 검색"
+          />
+          <button class="search-btn" type="submit">검색</button>
+        </form>
+
+        <div class="hero-quicks">
+          <span>인기 검색:</span>
+          <button class="quick" data-quick="시공">시공</button>
+          <button class="quick" data-quick="검침">검침</button>
+          <button class="quick" data-quick="운영">운영</button>
+          <button class="quick" data-quick="통신">통신</button>
+          <button class="quick" data-quick="분석">데이터 분석</button>
+          <button class="quick" data-quick="개발">개발</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats Strip ===== -->
+    <section id="stats" class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <div class="stat-num" id="statTotalJobs">0</div>
+          <div class="stat-cap">진행 중인 공고</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statTotalHeadcount">0</div>
+          <div class="stat-cap">총 채용 인원</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statOrgs">0</div>
+          <div class="stat-cap">채용 기관</div>
+        </div>
+        <div class="stat urgent">
+          <div class="stat-num" id="statUrgent">0</div>
+          <div class="stat-cap">마감 임박 <span class="muted">(D-7)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Jobs : Filters + Grid ===== -->
+    <section id="jobs" class="board">
+      <div class="container board-grid">
+
+        <!-- Filter Sidebar -->
+        <aside class="filters" aria-label="필터">
+          <div class="filters-header">
+            <h2>필터</h2>
+            <button class="link-btn" id="resetFilters" type="button">초기화</button>
+          </div>
+
+          <fieldset class="filter-group">
+            <legend>분야</legend>
+            <div class="check-list" id="filterFields"></div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>지역</legend>
+            <div class="check-list cols-2" id="filterRegions"></div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>경력</legend>
+            <div class="check-list" id="filterCareers"></div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>채용 인원</legend>
+            <div class="range">
+              <input
+                type="range"
+                id="filterHeadcount"
+                min="0" max="30" step="1" value="0"
+                aria-label="최소 채용 인원"
+              />
+              <div class="range-val">
+                <span id="filterHeadcountValue">0</span>명 이상
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>마감</legend>
+            <div class="radio-list" id="filterDeadline">
+              <label><input type="radio" name="deadline" value="all" checked /><span>전체</span></label>
+              <label><input type="radio" name="deadline" value="urgent" /><span>마감 임박 (D-7)</span></label>
+              <label><input type="radio" name="deadline" value="month" /><span>이번 달 이내</span></label>
+            </div>
+          </fieldset>
+        </aside>
+
+        <!-- Job List -->
+        <div class="job-list">
+          <div class="job-toolbar">
+            <div class="job-count" id="jobCount">
+              총 <strong>0</strong>건
+            </div>
+            <div class="sort">
+              <label for="sortSelect">정렬</label>
+              <select id="sortSelect">
+                <option value="deadline">마감 임박순</option>
+                <option value="latest">최신 등록순</option>
+                <option value="headcountDesc">채용인원 많은순</option>
+                <option value="headcountAsc">채용인원 적은순</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="active-chips" id="activeChips" aria-live="polite"></div>
+
+          <div class="cards" id="cards" aria-live="polite"></div>
+
+          <div class="empty" id="empty" hidden>
+            <div class="empty-icon">🔍</div>
+            <h3>조건에 맞는 공고가 없습니다</h3>
+            <p>필터를 조정하거나 검색어를 다르게 입력해 보세요.</p>
+            <button class="btn btn-ghost" id="emptyReset" type="button">필터 초기화</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">About</span>
+          <h2>왜 AMIJOB인가요?</h2>
+          <p>
+            AMI(스마트미터링) 분야는 한전KDN, 한국전력공사, 한국가스공사, 한국수자원공사,
+            한국지역난방공사, 한국에너지공단 등 여러 공공기관이 동시에 채용을 진행합니다.
+            알리오에 흩어진 공고를 매번 검색하느라 가장 잘 맞는 자리를 놓치지 않도록,
+            AMIJOB이 한 화면에서 정리해 드립니다.
+          </p>
+          <ul class="check-bullets">
+            <li><span class="check">✓</span> 분야 · 지역 · 채용인원 · 경력 · 마감일 통합 필터</li>
+            <li><span class="check">✓</span> 카드 한 장으로 보는 핵심 정보, 클릭 한 번에 상세 보기</li>
+            <li><span class="check">✓</span> 공통 지원서 양식 다운로드 (PDF 인쇄 가능)</li>
+            <li><span class="check">✓</span> 알리오 공식 공고 즉시 이동 링크</li>
+          </ul>
+        </div>
+        <aside class="about-card">
+          <h3>데이터 출처</h3>
+          <p>본 사이트의 채용 정보는 ALIO (공공기관 경영정보 공개시스템) 공개 데이터를 가공한 샘플입니다.</p>
+          <a href="https://www.alio.go.kr" target="_blank" rel="noopener" class="btn btn-ghost btn-block">
+            ALIO 바로가기 →
+          </a>
+          <p class="muted" id="aboutUpdated"></p>
+          <p class="muted small">실제 지원은 각 기관의 공식 채용 공고를 반드시 확인해 주세요.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand-foot">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+            </svg>
+          </span>
+          <span class="brand-name">AMI<b>JOB</b></span>
+        </div>
+        <p class="muted">AMI 분야 채용 정보를 한 곳에서.<br />ALIO 공개 데이터 기반 큐레이션.</p>
+      </div>
+      <div>
+        <h4>채용 정보</h4>
+        <a href="#jobs">전체 공고</a>
+        <a href="#stats">한눈에 보기</a>
+        <a href="application-form.html" target="_blank">지원서 양식</a>
+      </div>
+      <div>
+        <h4>관련 사이트</h4>
+        <a href="https://www.alio.go.kr" target="_blank" rel="noopener">ALIO</a>
+        <a href="https://www.kdn.com" target="_blank" rel="noopener">한전KDN</a>
+        <a href="https://home.kepco.co.kr" target="_blank" rel="noopener">한국전력공사</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> AMIJOB. 데이터는 ALIO 공개정보를 기반으로 한 샘플입니다.</small>
+      <small class="muted">Not affiliated with ALIO or any listed agency.</small>
+    </div>
+  </footer>
+
+  <!-- ===== Job Detail Modal ===== -->
+  <div class="modal" id="jobModal" hidden aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" aria-label="닫기" data-close>×</button>
+      <div class="modal-content" id="modalContent">
+        <!-- Dynamic content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Job card template -->
+  <template id="cardTpl">
+    <article class="card" tabindex="0" role="button">
+      <div class="card-top">
+        <div class="org-logo"></div>
+        <div class="card-org-meta">
+          <div class="org-name"></div>
+          <div class="job-id muted"></div>
+        </div>
+        <div class="dday"></div>
+      </div>
+      <h3 class="card-title"></h3>
+      <p class="card-summary"></p>
+      <div class="card-meta">
+        <span class="meta-item meta-field"><span class="dot"></span><b></b></span>
+        <span class="meta-item meta-location">📍 <b></b></span>
+        <span class="meta-item meta-headcount">👥 <b></b>명</span>
+        <span class="meta-item meta-career">📌 <b></b></span>
+      </div>
+      <div class="card-foot">
+        <span class="close-date muted"></span>
+        <span class="card-cta">자세히 보기 →</span>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
