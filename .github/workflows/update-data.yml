@@ -1,0 +1,44 @@
+name: Update ALIO data
+
+# 매일 한국시간(KST) 오전 6시에 알리오 채용공고를 스크래핑하여 data.json을 갱신합니다.
+# KST 06:00 = UTC 21:00 (전날). cron은 UTC 기준입니다.
+on:
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch: {} # 수동 실행 허용(Actions 탭에서 "Run workflow")
+
+# data.json 커밋/푸시를 위해 쓰기 권한 부여
+permissions:
+  contents: write
+
+# 동시 실행 방지
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Scrape ALIO → data.json
+        run: node scripts/update-data.mjs
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data.json; then
+            echo "변경 사항 없음 — 커밋 생략"
+          else
+            git add data.json
+            git commit -m "chore(data): 알리오 채용공고 자동 갱신 ($(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST'))"
+            git push
+          fi

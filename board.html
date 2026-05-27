@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>게시판 · AMIJOB</title>
+  <meta name="description" content="AMIJOB 상담게시판 / 채용이야기 — AMI 채용 관련 질문과 경험을 나누는 공간." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Top Nav ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a href="index.html#top" class="brand" aria-label="AMIJOB 홈">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+          </svg>
+        </span>
+        <span class="brand-name">AMI<b>JOB</b></span>
+      </a>
+
+      <nav class="nav-links" aria-label="주 메뉴">
+        <a href="index.html#jobs">전체 공고</a>
+        <a href="board.html?board=consult">상담게시판</a>
+        <a href="board.html?board=story">채용이야기</a>
+        <a href="application-form.html" target="_blank">지원서</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="index.html" class="link-btn">← 채용정보로</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== Board Header ===== -->
+    <section class="board-hero">
+      <div class="container">
+        <span class="eyebrow" id="boardEyebrow">COMMUNITY</span>
+        <h1 id="boardTitle">게시판</h1>
+        <p class="muted" id="boardDesc"></p>
+        <div class="board-tabs" id="boardTabs">
+          <a href="board.html?board=consult" data-board="consult">💬 상담게시판</a>
+          <a href="board.html?board=story" data-board="story">📝 채용이야기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Board List ===== -->
+    <section class="board-wrap">
+      <div class="container">
+        <div class="board-toolbar">
+          <div class="job-count" id="postCount">총 <strong>0</strong>건</div>
+          <button class="btn btn-primary" id="writeBtn" type="button">✏️ 글쓰기</button>
+        </div>
+
+        <div class="post-table" id="postTable" role="table" aria-label="게시글 목록">
+          <div class="post-row post-head" role="row">
+            <span class="col-no">번호</span>
+            <span class="col-title">제목</span>
+            <span class="col-author">작성자</span>
+            <span class="col-views">조회</span>
+            <span class="col-date">날짜</span>
+          </div>
+          <div id="postList"></div>
+        </div>
+
+        <div class="board-empty" id="boardEmpty" hidden>
+          <div class="empty-icon">🗒️</div>
+          <h3>아직 게시글이 없습니다</h3>
+          <p>첫 글을 작성해 보세요.</p>
+        </div>
+
+        <div class="board-notice" id="boardNotice" hidden></div>
+
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> AMIJOB. 데이터는 ALIO 공개정보를 기반으로 한 샘플입니다.</small>
+      <small class="muted">게시판 내용은 작성자 개인의 의견이며 AMIJOB의 공식 입장이 아닙니다.</small>
+    </div>
+  </footer>
+
+  <!-- ===== Modal (view / write / edit) ===== -->
+  <div class="modal" id="boardModal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" aria-label="닫기" data-close>×</button>
+      <div class="modal-content" id="boardModalContent"></div>
+    </div>
+  </div>
+
+  <!-- supabase-js v2 -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="board.js"></script>
+</body>
+</html>
