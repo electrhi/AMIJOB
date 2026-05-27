@@ -11,6 +11,7 @@
    값을 채운 뒤 commit/push 하면 배포 사이트의 게시판이 동작합니다.
    ========================================================= */
 window.AMIJOB_SUPABASE = {
-  url: "https://YOUR-PROJECT-REF.supabase.co",
-  anonKey: "YOUR-ANON-PUBLIC-KEY",
+  url: "https://blbmdnygvoqyrovvlrrh.supabase.co",
+  anonKey:
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJsYm1kbnlndm9xeXJvdnZscnJoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4MTU4NTUsImV4cCI6MjA5NTM5MTg1NX0.s4bns7R6vzjNJggya-g4qD5uxNNtCvX4oJUVpL2aMmg",
 };
