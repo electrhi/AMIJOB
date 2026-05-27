@@ -473,12 +473,18 @@ function openModal(job) {
   `;
 
   // Action bar (sticky bottom)
+  const applyFileBtn = job.applicationFile
+    ? `<a class="btn btn-ghost" href="${escape(job.applicationFile.url)}" target="_blank" rel="noopener">
+         📄 입사지원서 내려받기 <span class="muted small">(${escape(job.applicationFile.name)})</span>
+       </a>`
+    : `<a class="btn btn-ghost" href="${escape(job.alioUrl)}" target="_blank" rel="noopener">
+         📎 알리오 첨부파일 보기
+       </a>`;
+
   const actions = document.createElement("div");
   actions.className = "modal-actions";
   actions.innerHTML = `
-    <a class="btn btn-ghost" href="application-form.html" target="_blank" rel="noopener" download="AMIJOB-application-${job.id}.html">
-      📄 지원서 양식 다운로드
-    </a>
+    ${applyFileBtn}
     <a class="btn btn-primary" href="${escape(job.alioUrl)}" target="_blank" rel="noopener">
       알리오에서 지원하기 →
     </a>

@@ -127,6 +127,27 @@ function parseListItems(html, org) {
   return items;
 }
 
+/* 상세 페이지의 첨부파일 목록 추출 → [{ name, url }] */
+function parseAttachments(html) {
+  const re =
+    /<a\s+href="(https:\/\/www\.alio\.go\.kr\/download\/download\.json\?fileNo=\d+)"[^>]*>([\s\S]*?)<\/a>/g;
+  const files = [];
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const name = stripTags(m[2]).replace(/^\s*\d+\.\s*/, "").trim(); // "3. 입사지원서.hwp" → "입사지원서.hwp"
+    if (name) files.push({ name, url: m[1] });
+  }
+  return files;
+}
+
+/* 첨부파일 중 파일명에 '지원서'가 포함된 것을 반환(입사지원서 우선) */
+function pickApplicationFile(files) {
+  const cands = files.filter((f) => f.name.includes("지원서"));
+  if (cands.length === 0) return null;
+  const preferred = cands.find((f) => f.name.includes("입사지원서"));
+  return preferred || cands[0];
+}
+
 /* 상세 페이지의 표(th/td) → 맵 */
 function parseDetailTable(html) {
   const re = /<th[^>]*>([\s\S]*?)<\/th>\s*<td[^>]*>([\s\S]*?)<\/td>/g;
@@ -218,9 +239,11 @@ async function enrich(item, validRegions) {
   const detailUrl = `${CONFIG.detailBase}?idx=${item.idx}`;
 
   let table = {};
+  let applicationFile = null;
   try {
     const html = await fetchText(detailUrl);
     table = parseDetailTable(html);
+    applicationFile = pickApplicationFile(parseAttachments(html));
   } catch (e) {
     console.warn(`  [경고] idx=${item.idx} 상세 요청 실패: ${e.message}`);
   }
@@ -267,6 +290,7 @@ async function enrich(item, validRegions) {
     preferred,
     process: ["서류전형", "면접", "최종합격"],
     alioUrl: detailUrl,
+    applicationFile, // { name, url } | null — 알리오 '지원서' 첨부파일
   };
 }
 

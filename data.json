@@ -132,7 +132,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300268"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300268",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3048104"
+      }
     },
     {
       "id": "alio-300386",
@@ -165,7 +169,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300386"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300386",
+      "applicationFile": {
+        "name": "입사지원서 (1).hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3048703"
+      }
     },
     {
       "id": "alio-300385",
@@ -204,7 +212,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300385"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300385",
+      "applicationFile": {
+        "name": "입사지원서(구미지사 AMI분야).hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3048700"
+      }
     },
     {
       "id": "alio-300359",
@@ -235,7 +247,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300359"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300359",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3048591"
+      }
     },
     {
       "id": "alio-300261",
@@ -266,7 +282,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300261"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300261",
+      "applicationFile": {
+        "name": "붙임 3. 입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3048072"
+      }
     },
     {
       "id": "alio-300884",
@@ -299,7 +319,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300884"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300884",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3051453"
+      }
     },
     {
       "id": "alio-300496",
@@ -334,7 +358,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300496"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300496",
+      "applicationFile": {
+        "name": "입사지원서_현장보조원.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3049258"
+      }
     },
     {
       "id": "alio-300464",
@@ -367,7 +395,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300464"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300464",
+      "applicationFile": {
+        "name": "입사지원서.hwpx",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3049119"
+      }
     },
     {
       "id": "alio-300630",
@@ -400,7 +432,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300630"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300630",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3050039"
+      }
     },
     {
       "id": "alio-300640",
@@ -433,7 +469,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300640"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300640",
+      "applicationFile": {
+        "name": "입사지원서.hwpx",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3050070"
+      }
     },
     {
       "id": "alio-300685",
@@ -472,7 +512,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300685"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300685",
+      "applicationFile": {
+        "name": "K-water 입사지원서(양식).pdf",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3050324"
+      }
     },
     {
       "id": "alio-300901",
@@ -505,7 +549,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300901"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300901",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3051546"
+      }
     },
     {
       "id": "alio-300864",
@@ -544,7 +592,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300864"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300864",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3051343"
+      }
     },
     {
       "id": "alio-300780",
@@ -575,7 +627,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300780"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300780",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3050871"
+      }
     },
     {
       "id": "alio-300898",
@@ -606,7 +662,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300898"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300898",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3051532"
+      }
     },
     {
       "id": "alio-300855",
@@ -644,7 +704,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300855"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300855",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3051294"
+      }
     },
     {
       "id": "alio-300968",
@@ -683,7 +747,11 @@
         "면접",
         "최종합격"
       ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300968"
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300968",
+      "applicationFile": {
+        "name": "K-water 입사지원서(양식).pdf",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3051948"
+      }
     }
   ]
 }
