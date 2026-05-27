@@ -66,7 +66,7 @@ grant select (id, post_id, nickname, content, created_at)
 create or replace function public.create_post(
   p_board text, p_nickname text, p_password text, p_title text, p_content text
 ) returns bigint
-language plpgsql security definer set search_path = public, pg_temp as $$
+language plpgsql security definer set search_path = public, extensions, pg_temp as $$
 declare new_id bigint;
 begin
   if p_board not in ('consult', 'story') then
@@ -85,7 +85,7 @@ end; $$;
 create or replace function public.update_post(
   p_id bigint, p_password text, p_title text, p_content text
 ) returns boolean
-language plpgsql security definer set search_path = public, pg_temp as $$
+language plpgsql security definer set search_path = public, extensions, pg_temp as $$
 declare ok boolean;
 begin
   select (password_hash = crypt(p_password, password_hash)) into ok
@@ -101,7 +101,7 @@ end; $$;
 create or replace function public.delete_post(
   p_id bigint, p_password text
 ) returns boolean
-language plpgsql security definer set search_path = public, pg_temp as $$
+language plpgsql security definer set search_path = public, extensions, pg_temp as $$
 declare ok boolean;
 begin
   select (password_hash = crypt(p_password, password_hash)) into ok
@@ -115,7 +115,7 @@ end; $$;
 create or replace function public.create_comment(
   p_post_id bigint, p_nickname text, p_password text, p_content text
 ) returns bigint
-language plpgsql security definer set search_path = public, pg_temp as $$
+language plpgsql security definer set search_path = public, extensions, pg_temp as $$
 declare new_id bigint;
 begin
   if char_length(coalesce(p_password, '')) < 4 then
@@ -131,7 +131,7 @@ end; $$;
 create or replace function public.delete_comment(
   p_id bigint, p_password text
 ) returns boolean
-language plpgsql security definer set search_path = public, pg_temp as $$
+language plpgsql security definer set search_path = public, extensions, pg_temp as $$
 declare ok boolean;
 begin
   select (password_hash = crypt(p_password, password_hash)) into ok
@@ -144,7 +144,7 @@ end; $$;
 -- 조회수 증가
 create or replace function public.increment_views(p_id bigint)
 returns void
-language sql security definer set search_path = public, pg_temp as $$
+language sql security definer set search_path = public, extensions, pg_temp as $$
   update public.posts set views = views + 1 where id = p_id;
 $$;
 
