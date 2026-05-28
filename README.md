@@ -14,8 +14,10 @@
 | `data.json` | 채용 공고 데이터 (ALIO 스크래핑 결과, 매일 자동 갱신) |
 | `application-form.html` | 인쇄 가능한 공통 지원서 양식 |
 | `board.html` / `board.js` | 상담게시판 · 채용이야기 게시판 (Supabase) |
-| `supabase-config.js` | 게시판 Supabase 연결 설정 (URL·anon 키) |
+| `supabase-config.js` | 게시판·챗봇 공용 Supabase 연결 설정 (URL·anon 키) |
 | `supabase/schema.sql` | 게시판 DB 스키마 (테이블·RLS·RPC) |
+| `chat-widget.css` / `chat-widget.js` | 채용 도우미 챗봇 위젯 (모든 페이지에 삽입 가능) |
+| `supabase/functions/chat/` | 챗봇 백엔드 — OpenAI 호출 Edge Function (API 키 은닉) |
 | `scripts/update-data.mjs` | ALIO 채용공고 스크래퍼 |
 | `.github/workflows/update-data.yml` | 매일 KST 06시 자동 갱신 워크플로우 |
 
@@ -113,6 +115,42 @@ python -m http.server 8000
 - 비밀번호는 평문이 아닌 **bcrypt 해시(pgcrypto)**로 저장
 - 글쓰기/수정/삭제는 비밀번호를 검증하는 **RPC 함수(SECURITY DEFINER)**로만 가능 — 공개되는 anon 키로 데이터를 임의 변경할 수 없습니다.
 - `password_hash` 컬럼은 클라이언트 조회 권한에서 제외
+
+## 채용 도우미 챗봇
+
+OpenAI(GPT) 기반 챗봇으로, **현재 공고 데이터(`data.json`) 기반 Q&A**와 **자기소개서·면접 등 일반 채용 상담**을 함께 제공합니다. 모든 페이지 우하단의 플로팅 버튼으로 열립니다.
+
+**아키텍처** — 정적 사이트라서 OpenAI 키를 프론트엔드에 둘 수 없습니다. 그래서 키는 **Supabase Edge Function**(`supabase/functions/chat`)에만 보관하고, 프론트(`chat-widget.js`)는 이 함수를 호출합니다. 함수는 프론트가 보낸 공고 요약과 대화를 받아 OpenAI에 질의하고 답변만 돌려줍니다.
+
+**설정 방법**
+
+1. **Supabase CLI 설치 & 로그인**
+   ```powershell
+   npm install -g supabase
+   supabase login
+   ```
+2. **Edge Function 배포** (프로젝트 ref는 `supabase-config.js`의 URL 서브도메인)
+   ```powershell
+   cd C:\Users\User\AMIJOB
+   supabase functions deploy chat --project-ref blbmdnygvoqyrovvlrrh
+   ```
+3. **OpenAI 키를 시크릿으로 등록** (프론트에 절대 넣지 말 것)
+   ```powershell
+   supabase secrets set OPENAI_API_KEY=sk-...
+   # (선택) 모델 변경 — 기본 gpt-4o-mini
+   supabase secrets set OPENAI_MODEL=gpt-4o-mini
+   ```
+4. 끝. `chat-widget.js`는 `supabase-config.js`의 URL/anon 키로 `…/functions/v1/chat`을 호출하므로 추가 프론트 설정이 없습니다.
+
+> 대시보드로도 가능합니다: Supabase → **Edge Functions**에서 `chat` 생성 후 `index.ts` 붙여넣기, **Edge Functions → Secrets**에 `OPENAI_API_KEY` 추가.
+
+**다른 페이지에 챗봇 추가** — `<head>`에 `<link rel="stylesheet" href="chat-widget.css" />`, `</body>` 직전에 아래 두 줄을 넣으면 됩니다. (`index.html`에는 적용 완료)
+```html
+<script src="supabase-config.js"></script>
+<script src="chat-widget.js"></script>
+```
+
+**비용/주의** — OpenAI 사용량만큼 과금됩니다. 기본 모델 `gpt-4o-mini`는 저렴하며, 함수는 대화 최근 12개·공고 60건으로 토큰을 제한합니다. anon 키는 공개되므로, 남용이 우려되면 Edge Function에 호출 한도/검증을 추가하세요.
 
 ## 데이터 출처 및 면책
 
