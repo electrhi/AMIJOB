@@ -37,6 +37,7 @@ const CONFIG = {
     "AMI", "검침", "스마트미터", "스마트 미터", "원격검침", "계량",
     "전력량계", "미터링", "메터링", "통신", "네트워크",
     "시공", "설비", "작업원", "전력", "PLC", "단말기",
+    "배전", "ICT", "정보통신", "상수도", "전기원",
   ],
   maxPagesPerOrg: 5, // 기관당 최대 페이지 수 (10건/페이지)
   requestDelayMs: 350, // 요청 간 간격(서버 부담 최소화)
@@ -57,19 +58,26 @@ const ORG_META = {
 };
 
 /* ----------------------- HTTP ----------------------- */
-async function fetchText(url) {
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), CONFIG.timeoutMs);
-  try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": CONFIG.userAgent, "Accept-Language": "ko-KR,ko;q=0.9" },
-      signal: ctrl.signal,
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-    return await res.text();
-  } finally {
-    clearTimeout(t);
+async function fetchText(url, { retries = 2, backoffMs = 800 } = {}) {
+  let lastErr;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), CONFIG.timeoutMs);
+    try {
+      const res = await fetch(url, {
+        headers: { "User-Agent": CONFIG.userAgent, "Accept-Language": "ko-KR,ko;q=0.9" },
+        signal: ctrl.signal,
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+      return await res.text();
+    } catch (e) {
+      lastErr = e;
+      if (attempt < retries) await new Promise((r) => setTimeout(r, backoffMs * (attempt + 1)));
+    } finally {
+      clearTimeout(t);
+    }
   }
+  throw lastErr;
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
