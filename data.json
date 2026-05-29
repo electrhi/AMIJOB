@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29",
+  "lastUpdated": "2026-05-30",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,53 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-300268",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 광주전남본부 AMI분야 비정규직 모집 공고",
-      "field": "network",
-      "headcount": 3,
-      "location": "광주",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-05-08",
-      "closeDate": "2026-05-22",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 광주전남본부 AMI분야 비정규직 모집 공고」 채용 공고입니다.",
-      "description": "한전KDN 광주 근무, 신입+경력, 채용인원 3명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "자가차량 보유자(자동차보험",
-        "유효한 검사필증 必)",
-        "전기/통신분야 현장업무 유경험자(100일 이상)",
-        "AMI 분야 경력자 우대",
-        "복지 카드(장애인) 소지자/보훈증 소지자",
-        "전기 및 배전(가공배전",
-        "가공활선",
-        "무정전)",
-        "ICT자격증 소지자(조공)",
-        "안전관련 자격증(안전",
-        "기술 지도원)"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300268",
-      "applicationFile": {
-        "name": "입사지원서.hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3048104"
-      }
-    },
     {
       "id": "alio-300351",
       "organization": "한전KDN",
@@ -1165,6 +1118,86 @@
       "applicationFile": {
         "name": "붙임_3. 입사지원서(강북_전력).hwp",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3052434"
+      }
+    },
+    {
+      "id": "alio-301130",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 강북지사 AMI분야 비정규직 모집공고(수시모집]",
+      "field": "network",
+      "headcount": 12,
+      "location": "서울",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-05-29",
+      "closeDate": "2026-06-12",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 강북지사 AMI분야 비정규직 모집공고(수시모집]」 채용 공고입니다.",
+      "description": "한전KDN 서울 근무, 신입+경력, 채용인원 12명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "모집공고 참조"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=301130",
+      "applicationFile": {
+        "name": "입사지원서_강북지사 미터링사업팀.hwpx",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3052830"
+      }
+    },
+    {
+      "id": "alio-301144",
+      "organization": "한국수자원공사",
+      "organizationShort": "K-water",
+      "color": "#0891b2",
+      "title": "[한국수자원공사] 파주수도지사 특수직(수탁운영_지방상수도 고객관리) 채용 공고",
+      "field": "installation",
+      "headcount": 1,
+      "location": "경기",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-05-29",
+      "closeDate": "2026-06-12",
+      "salary": "신입 / 평균",
+      "summary": "한국수자원공사에서 진행하는 「[한국수자원공사] 파주수도지사 특수직(수탁운영_지방상수도 고객관리) 채용 공고」 채용 공고입니다.",
+      "description": "한국수자원공사 경기 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 경영.회계.사무",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "취업지원대상자(해당 법률에 따라 적용)",
+        "장애인",
+        "국민기초생활수급자",
+        "한부모가족",
+        "북한이탈주민",
+        "다문화가족",
+        "자립준비청년"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=301144",
+      "applicationFile": {
+        "name": "K-water 입사지원서(양식).pdf",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3052925"
       }
     }
   ]
