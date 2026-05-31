@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-31",
+  "lastUpdated": "2026-06-01",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -1198,6 +1198,45 @@
       "applicationFile": {
         "name": "K-water 입사지원서(양식).pdf",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3052925"
+      }
+    },
+    {
+      "id": "alio-301082",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 광주전남본부 직할 전력통신 비정규 근로자 모집공고",
+      "field": "network",
+      "headcount": 5,
+      "location": "광주",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-06-01",
+      "closeDate": "2026-06-15",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 광주전남본부 직할 전력통신 비정규 근로자 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 광주 근무, 신입+경력, 채용인원 5명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "정보통신분야 경력자 또는 관련 자격증 소지자",
+        "인정자격 : 통신회사 근무경력 또는 국가기술자격증 소지자",
+        "장애인 복지카드 소지자"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=301082",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3052616"
       }
     }
   ]
