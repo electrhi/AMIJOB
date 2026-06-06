@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05",
+  "lastUpdated": "2026-06-07",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,43 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-300630",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 제주사업처 AMI분야 비정규직(장애인) 모집공고",
-      "field": "network",
-      "headcount": 2,
-      "location": "제주",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-05-15",
-      "closeDate": "2026-05-29",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 제주사업처 AMI분야 비정규직(장애인) 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 제주 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 전기.전자,정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "복지카드(중증 장애인) 소지자"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=300630",
-      "applicationFile": {
-        "name": "입사지원서.hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3050039"
-      }
-    },
     {
       "id": "alio-300640",
       "organization": "한전KDN",
