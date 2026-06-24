@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24",
+  "lastUpdated": "2026-06-25",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -642,6 +642,43 @@
       "applicationFile": {
         "name": "입사지원서 및 자기소개서.hwp",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3056661"
+      }
+    },
+    {
+      "id": "alio-302003",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 강남지사 배전자동화 분야 작업원 모집공고",
+      "field": "network",
+      "headcount": 2,
+      "location": "서울",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-06-24",
+      "closeDate": "2026-07-08",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 강남지사 배전자동화 분야 작업원 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 서울 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "모집공고 참조"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=302003",
+      "applicationFile": {
+        "name": "입사지원서.pdf",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3057788"
       }
     }
   ]
