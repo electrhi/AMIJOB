@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25",
+  "lastUpdated": "2026-06-29",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,43 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-301315",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 울산지사 AMI 단순정비 작업원 모집공고",
-      "field": "network",
-      "headcount": 4,
-      "location": "울산",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-06-04",
-      "closeDate": "2026-06-18",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 울산지사 AMI 단순정비 작업원 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 울산 근무, 신입+경력, 채용인원 4명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "모집공고문 내용 참조"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=301315",
-      "applicationFile": {
-        "name": "입사지원서.hwpx",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3053878"
-      }
-    },
     {
       "id": "alio-301372",
       "organization": "한전KDN",
@@ -679,6 +642,44 @@
       "applicationFile": {
         "name": "입사지원서.pdf",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3057788"
+      }
+    },
+    {
+      "id": "alio-302056",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 울산지사 배전분야 일용원 모집공고",
+      "field": "network",
+      "headcount": 1,
+      "location": "울산",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-06-26",
+      "closeDate": "2026-07-10",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 울산지사 배전분야 일용원 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 울산 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "해당분야 유경험자",
+        "복지카드(장애인) 소지자"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=302056",
+      "applicationFile": {
+        "name": "입사지원서.hwpx",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3058150"
       }
     }
   ]
