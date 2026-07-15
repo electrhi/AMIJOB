@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14",
+  "lastUpdated": "2026-07-16",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,43 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-302003",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 강남지사 배전자동화 분야 작업원 모집공고",
-      "field": "network",
-      "headcount": 2,
-      "location": "서울",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-06-24",
-      "closeDate": "2026-07-08",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 강남지사 배전자동화 분야 작업원 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 서울 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 전기.전자,정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "모집공고 참조"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=302003",
-      "applicationFile": {
-        "name": "입사지원서.pdf",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3057788"
-      }
-    },
     {
       "id": "alio-302056",
       "organization": "한전KDN",
@@ -1143,6 +1106,125 @@
       "applicationFile": {
         "name": "입사지원서(구미지사 AMI분야).hwp",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3061687"
+      }
+    },
+    {
+      "id": "alio-302750",
+      "organization": "한국수자원공사",
+      "organizationShort": "K-water",
+      "color": "#0891b2",
+      "title": "[한국수자원공사] 전남서남권지사 단기계약근로자(기술관리_설비운영(배출수처리시설)) 채용 공고",
+      "field": "network",
+      "headcount": 1,
+      "location": "전남",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-07-15",
+      "closeDate": "2026-07-29",
+      "salary": "신입 / 평균",
+      "summary": "한국수자원공사에서 진행하는 「[한국수자원공사] 전남서남권지사 단기계약근로자(기술관리_설비운영(배출수처리시설)) 채용 공고」 채용 공고입니다.",
+      "description": "한국수자원공사 전남 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 기계,전기.전자,정보통신,환경.에너지.안전",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "취업지원대상자(해당 법률에 따라 적용)",
+        "장애인",
+        "국민기초생활수급자",
+        "한부모가족",
+        "북한이탈주민",
+        "다문화가족",
+        "자립준비청년"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=302750",
+      "applicationFile": {
+        "name": "K-water 입사지원서(양식).pdf",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3062076"
+      }
+    },
+    {
+      "id": "alio-302681",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "2026년도 한전KDN(주) 순천지사 AMI분야 비정규직 모집공고",
+      "field": "network",
+      "headcount": 1,
+      "location": "전남",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-07-16",
+      "closeDate": "2026-07-30",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「2026년도 한전KDN(주) 순천지사 AMI분야 비정규직 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 전남 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "전기",
+        "통신분야 현장업무 유경험자(100일 이상)",
+        "AMI분야 경력자 우대"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=302681",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3061718"
+      }
+    },
+    {
+      "id": "alio-302702",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 충북사업처 AMI분야 비정규직 모집공고",
+      "field": "network",
+      "headcount": 16,
+      "location": "충북",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-07-14",
+      "closeDate": "2026-07-31",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 충북사업처 AMI분야 비정규직 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 충북 근무, 신입+경력, 채용인원 16명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "아래 우대내용 참조"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=302702",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3061824"
       }
     }
   ]
