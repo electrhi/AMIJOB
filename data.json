@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24",
+  "lastUpdated": "2026-07-25",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,48 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-302193",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 강원사업처 강릉지사 AMI분야 작업원 모집공고",
-      "field": "network",
-      "headcount": 9,
-      "location": "강원",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-07-03",
-      "closeDate": "2026-07-17",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 강원사업처 강릉지사 AMI분야 작업원 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 강원 근무, 신입+경력, 채용인원 9명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "자가차량(고소차량 포함) 보유자(자동차보험",
-        "유효한 검시필증 必)",
-        "운전면허 소지자(1종보통)",
-        "전기",
-        "통신분야 현장업무 유경험자(100일이상) 및 자격증 보유자",
-        "복지카드(장애인) 소지자"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=302193",
-      "applicationFile": {
-        "name": "입사지원서.hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3058982"
-      }
-    },
     {
       "id": "alio-302343",
       "organization": "한전KDN",
