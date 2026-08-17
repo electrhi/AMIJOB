@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-16",
+  "lastUpdated": "2026-08-18",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,49 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-303117",
-      "organization": "한국수자원공사",
-      "organizationShort": "K-water",
-      "color": "#0891b2",
-      "title": "[한국수자원공사] 전남북부권지사 특수직(수탁운영_지방상수도 고객관리) 채용 공고",
-      "field": "installation",
-      "headcount": 1,
-      "location": "전남",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-07-27",
-      "closeDate": "2026-08-10",
-      "salary": "신입 / 평균",
-      "summary": "한국수자원공사에서 진행하는 「[한국수자원공사] 전남북부권지사 특수직(수탁운영_지방상수도 고객관리) 채용 공고」 채용 공고입니다.",
-      "description": "한국수자원공사 전남 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 경영.회계.사무",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "취업지원대상자(해당 법률에 따라 적용)",
-        "장애인",
-        "국민기초생활수급자",
-        "한부모가족",
-        "북한이탈주민",
-        "다문화가족",
-        "자립준비청년"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=303117",
-      "applicationFile": {
-        "name": "K-water 입사지원서(양식).pdf",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3064120"
-      }
-    },
     {
       "id": "alio-303201",
       "organization": "한전KDN",
