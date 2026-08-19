@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18",
+  "lastUpdated": "2026-08-20",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,46 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-303201",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 용인지사 OA설비 유지보수 일용근로자 모집공고",
-      "field": "network",
-      "headcount": 1,
-      "location": "경기",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "경력",
-      "careerLevel": "junior",
-      "openDate": "2026-07-29",
-      "closeDate": "2026-08-12",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 용인지사 OA설비 유지보수 일용근로자 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 경기 근무, 경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 경력"
-      ],
-      "preferred": [
-        "컴퓨터",
-        "통신",
-        "사무관련 경력자 또는 관련 자격증 소지자",
-        "한전OA설비 유지보수 현장실무경력자"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=303201",
-      "applicationFile": {
-        "name": "입사지원서.hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3064614"
-      }
-    },
     {
       "id": "alio-303150",
       "organization": "한전KDN",
@@ -845,6 +805,158 @@
       "applicationFile": {
         "name": "K-water 입사지원서(양식).pdf",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3068868"
+      }
+    },
+    {
+      "id": "alio-303990",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 대구본부 배전자동화 공사 분야 작업원 모집공고",
+      "field": "network",
+      "headcount": 4,
+      "location": "대구",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-08-19",
+      "closeDate": "2026-09-02",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 대구본부 배전자동화 공사 분야 작업원 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 대구 근무, 신입+경력, 채용인원 4명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "모집공고 우대사항 참조"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=303990",
+      "applicationFile": {
+        "name": "입사지원서(배전자동화 공사 분야).hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3069869"
+      }
+    },
+    {
+      "id": "alio-303963",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 인천사업처 배전자동화분야 작업원 모집공고",
+      "field": "network",
+      "headcount": 2,
+      "location": "인천",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-08-19",
+      "closeDate": "2026-09-02",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 인천사업처 배전자동화분야 작업원 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 인천 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "."
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=303963",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3069705"
+      }
+    },
+    {
+      "id": "alio-304009",
+      "organization": "한국수자원공사",
+      "organizationShort": "K-water",
+      "color": "#0891b2",
+      "title": "[한국수자원공사] 양주수도지사 단기계약근로자(지방상수도 시설운영_교대근무) 채용 공고",
+      "field": "network",
+      "headcount": 1,
+      "location": "경기",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-08-19",
+      "closeDate": "2026-09-02",
+      "salary": "신입 / 평균",
+      "summary": "한국수자원공사에서 진행하는 「[한국수자원공사] 양주수도지사 단기계약근로자(지방상수도 시설운영_교대근무) 채용 공고」 채용 공고입니다.",
+      "description": "한국수자원공사 경기 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 건설,기계,전기.전자,정보통신,환경.에너지.안전",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "취업지원대상자(해당 법률에 따라 적용)",
+        "장애인",
+        "국민기초생활수급자",
+        "한부모가족",
+        "북한이탈주민",
+        "다문화가족",
+        "자립준비청년"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304009",
+      "applicationFile": {
+        "name": "K-water 입사지원서(양식).pdf",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3069976"
+      }
+    },
+    {
+      "id": "alio-303994",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 대전충남본부 배전자동화 공사분야 작업원 모집공고",
+      "field": "network",
+      "headcount": 2,
+      "location": "대전",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-08-20",
+      "closeDate": "2026-09-03",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 대전충남본부 배전자동화 공사분야 작업원 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 대전 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=303994",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3069893"
       }
     }
   ]
