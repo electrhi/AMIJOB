@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21",
+  "lastUpdated": "2026-08-22",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -908,6 +908,49 @@
       "applicationFile": {
         "name": "입사지원서.hwpx",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3070358"
+      }
+    },
+    {
+      "id": "alio-304132",
+      "organization": "한국수자원공사",
+      "organizationShort": "K-water",
+      "color": "#0891b2",
+      "title": "[한국수자원공사] 청주권지사 단기계약근로자(기술관리 설비운영_배출수 처리시설) 채용 공고(육아휴직 대체인력)",
+      "field": "network",
+      "headcount": 1,
+      "location": "충북",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-08-21",
+      "closeDate": "2026-09-04",
+      "salary": "신입 / 평균",
+      "summary": "한국수자원공사에서 진행하는 「[한국수자원공사] 청주권지사 단기계약근로자(기술관리 설비운영_배출수 처리시설) 채용 공고(육아휴직 대체인력)」 채용 공고입니다.",
+      "description": "한국수자원공사 충북 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 기계,전기.전자,정보통신,환경.에너지.안전",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "취업지원대상자(해당 법률에 따라 적용)",
+        "장애인",
+        "국민기초생활수급자",
+        "한부모가족",
+        "북한이탈주민",
+        "다문화가족",
+        "자립준비청년"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304132",
+      "applicationFile": {
+        "name": "K-water 입사지원서(양식).pdf",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3070646"
       }
     }
   ]
