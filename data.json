@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26",
+  "lastUpdated": "2026-08-27",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,79 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-303542",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 서울본부 강북지사 OA설비 유지보수 및 단순정비 일용근로자 모집",
-      "field": "network",
-      "headcount": 1,
-      "location": "서울",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-08-05",
-      "closeDate": "2026-08-19",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 서울본부 강북지사 OA설비 유지보수 및 단순정비 일용근로자 모집」 채용 공고입니다.",
-      "description": "한전KDN 서울 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 전기.전자,정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=303542",
-      "applicationFile": {
-        "name": "붙임_3. 입사지원서(강북_전력).hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3066345"
-      }
-    },
-    {
-      "id": "alio-303511",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 울산지사 배전분야 일용원 모집공고",
-      "field": "network",
-      "headcount": 2,
-      "location": "울산",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-08-05",
-      "closeDate": "2026-08-19",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 울산지사 배전분야 일용원 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 울산 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "해당분야 유경험자",
-        "복지카드(장애인) 소지자"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=303511",
-      "applicationFile": {
-        "name": "입사지원서.hwpx",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3066220"
-      }
-    },
     {
       "id": "alio-303577",
       "organization": "한전KDN",
