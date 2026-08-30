@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30",
+  "lastUpdated": "2026-08-31",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -760,6 +760,83 @@
       "applicationFile": {
         "name": "입사지원서.hwp",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3070554"
+      }
+    },
+    {
+      "id": "alio-304361",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 강원사업처 강릉지사 AMI분야 비정규직(장애인) 모집공고",
+      "field": "network",
+      "headcount": 1,
+      "location": "강원",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-08-31",
+      "closeDate": "2026-09-14",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 강원사업처 강릉지사 AMI분야 비정규직(장애인) 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 강원 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "자기차량(고소차량 포함) 보유자(자동차보험",
+        "유효한 검사필증 必)",
+        "운전면허 소지자(1종보통)",
+        "1.2톤 고소작업차 운행 가능자",
+        "전기",
+        "통신분야 현장업무 유경험자(100일 이상)"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304361",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3071880"
+      }
+    },
+    {
+      "id": "alio-304326",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 대전충남본부 천안지사 AMI분야 작업원 모집공고",
+      "field": "network",
+      "headcount": 2,
+      "location": "충남",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-08-31",
+      "closeDate": "2026-09-14",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 대전충남본부 천안지사 AMI분야 작업원 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 충남 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304326",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3071665"
       }
     }
   ]
