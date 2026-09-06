@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06",
+  "lastUpdated": "2026-09-07",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -901,6 +901,43 @@
       "applicationFile": {
         "name": "K-water 입사지원서(양식).pdf",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3072983"
+      }
+    },
+    {
+      "id": "alio-304608",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 경기북부사업처 저압AMI 통신망 보강공사 작업원 모집",
+      "field": "network",
+      "headcount": 17,
+      "location": "경기",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-09-07",
+      "closeDate": "2026-09-21",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 경기북부사업처 저압AMI 통신망 보강공사 작업원 모집」 채용 공고입니다.",
+      "description": "한전KDN 경기 근무, 신입+경력, 채용인원 17명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "기능사 이상 자격증(통신 분야) 등 보다 자세한 사항은 첨부파일의 모집공고문 참조"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304608",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3073069"
       }
     }
   ]
