@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-09-21",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,93 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-304174",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 강원사업처 AMI분야 비정규직(장애인) 모집공고",
-      "field": "network",
-      "headcount": 2,
-      "location": "강원",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-08-25",
-      "closeDate": "2026-09-08",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 강원사업처 AMI분야 비정규직(장애인) 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 강원 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "* 자기차량(고소차량 포함) 보유자(자동차보험",
-        "유효한 검사필증 必)",
-        "운전면허 소지자(1종보홈)",
-        "1.2톤 고소작업차 운행 가능자",
-        "전기",
-        "통신분야 현장업무 유경험자(100일 이상)"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304174",
-      "applicationFile": {
-        "name": "입사지원서.hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3070856"
-      }
-    },
-    {
-      "id": "alio-304113",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 목포지사 AMI분야 비정규직 모집공고",
-      "field": "network",
-      "headcount": 9,
-      "location": "전남",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-08-25",
-      "closeDate": "2026-09-08",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 목포지사 AMI분야 비정규직 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 전남 근무, 신입+경력, 채용인원 9명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "자가차량 보유자(자동차보험",
-        "유효한 검사필증 必)",
-        "KDN조공 해당",
-        "전기",
-        "통신분야 현장업무 유경험자(100일 이상)",
-        "AMI 현장작업 유경험자",
-        "엑셀",
-        "한글 능숙한 자(현장보조원",
-        "업무보조원)"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304113",
-      "applicationFile": {
-        "name": "입사지원서.hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3070554"
-      }
-    },
     {
       "id": "alio-304361",
       "organization": "한전KDN",
@@ -976,6 +889,92 @@
       }
     },
     {
+      "id": "alio-304838",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 구미지사 AMI분야 일용근로자 모집공고",
+      "field": "network",
+      "headcount": 6,
+      "location": "경북",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-09-16",
+      "closeDate": "2026-09-30",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 구미지사 AMI분야 일용근로자 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 경북 근무, 신입+경력, 채용인원 6명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "- 통신 및 배전 관련 자격증 보유자(예시 : 배전전기원",
+        "기능사(전기",
+        "통신 분야)",
+        "정보통신",
+        "전기공사 기술자 경력수첩(초급 이상))",
+        "차량(승용차",
+        "화물차) 보유자 또는 운영이 가능한 자"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304838",
+      "applicationFile": {
+        "name": "입사지원서(구미지사 AMI분야).hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3074252"
+      }
+    },
+    {
+      "id": "alio-304834",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 구미지사 배전분야 일용근로자 모집공고",
+      "field": "network",
+      "headcount": 4,
+      "location": "경북",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-09-16",
+      "closeDate": "2026-09-30",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 구미지사 배전분야 일용근로자 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 경북 근무, 신입+경력, 채용인원 4명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "- 통신 및 배전 관련 자격증 보유자(예시: 배전전기원",
+        "기능사(전기",
+        "통신 분야)",
+        "정보통신",
+        "전기공사 기술자 경력수첩(초급 이상))",
+        "차량(승용차",
+        "화물차) 보유자 또는 운영이 가능한 자"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=304834",
+      "applicationFile": {
+        "name": "입사지원서(구미지사 배전분야).hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3074229"
+      }
+    },
+    {
       "id": "alio-304954",
       "organization": "한전KDN",
       "organizationShort": "KDN",
@@ -1010,6 +1009,154 @@
       "applicationFile": {
         "name": "입사지원서.hwp",
         "url": "https://www.alio.go.kr/download/download.json?fileNo=3074880"
+      }
+    },
+    {
+      "id": "alio-305110",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 대구본부 포항지사 AMI분야 작업원 모집공고",
+      "field": "network",
+      "headcount": 13,
+      "location": "대구",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-09-18",
+      "closeDate": "2026-10-02",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 대구본부 포항지사 AMI분야 작업원 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 대구 근무, 신입+경력, 채용인원 13명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "모집공고 우대사항 참조"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=305110",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3075774"
+      }
+    },
+    {
+      "id": "alio-305083",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 강원사업처 AMI분야 비정규직(장애인) 모집공고",
+      "field": "network",
+      "headcount": 2,
+      "location": "강원",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-09-18",
+      "closeDate": "2026-10-02",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 강원사업처 AMI분야 비정규직(장애인) 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 강원 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "자기차량(고소차량 포함) 보유자(자동차보험",
+        "유효한 검사필증 必)",
+        "운전면허 소지자(1종보통)",
+        "1.2톤 고소작업차 운행 가능자",
+        "전기",
+        "통신분야 현장업무 유경험자(100일 이상)"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=305083",
+      "applicationFile": {
+        "name": "입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3075612"
+      }
+    },
+    {
+      "id": "alio-305077",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 경기북부사업처 2026년 DAS 통신설비 시설공사 작업원 모집",
+      "field": "network",
+      "headcount": 1,
+      "location": "경기",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-09-18",
+      "closeDate": "2026-10-02",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 경기북부사업처 2026년 DAS 통신설비 시설공사 작업원 모집」 채용 공고입니다.",
+      "description": "한전KDN 경기 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [
+        "우대조건 없음"
+      ],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=305077",
+      "applicationFile": null
+    },
+    {
+      "id": "alio-305137",
+      "organization": "한전KDN",
+      "organizationShort": "KDN",
+      "color": "#0d4a8b",
+      "title": "한전KDN(주) 대전충남본부 AMI분야 작업원(장애인) 추가 모집공고",
+      "field": "network",
+      "headcount": 1,
+      "location": "대전",
+      "employmentType": "비정규직",
+      "education": "학력무관",
+      "career": "신입+경력",
+      "careerLevel": "any",
+      "openDate": "2026-09-21",
+      "closeDate": "2026-10-05",
+      "salary": "신입 / 평균",
+      "summary": "한전KDN에서 진행하는 「한전KDN(주) 대전충남본부 AMI분야 작업원(장애인) 추가 모집공고」 채용 공고입니다.",
+      "description": "한전KDN 대전 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
+      "qualifications": [
+        "학력: 학력무관",
+        "직무분야(NCS): 전기.전자,정보통신",
+        "채용구분: 신입+경력"
+      ],
+      "preferred": [],
+      "process": [
+        "서류전형",
+        "면접",
+        "최종합격"
+      ],
+      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=305137",
+      "applicationFile": {
+        "name": "붙임3. 입사지원서.hwp",
+        "url": "https://www.alio.go.kr/download/download.json?fileNo=3075936"
       }
     }
   ]
