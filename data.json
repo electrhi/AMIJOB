@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-10-29",
   "source": {
     "name": "ALIO 공공기관 경영정보 공개시스템",
     "url": "https://www.alio.go.kr"
@@ -91,117 +91,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "alio-305783",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 서울본부 강남지사 전력통신팀 OA설비 유지보수 일용근로자 모집공고",
-      "field": "network",
-      "headcount": 2,
-      "location": "서울",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-10-07",
-      "closeDate": "2026-10-21",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 서울본부 강남지사 전력통신팀 OA설비 유지보수 일용근로자 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 서울 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 전기.전자,정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "모집공고문 참조"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=305783",
-      "applicationFile": {
-        "name": "붙임_3. 입사지원서(강남_전력통신).hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3079339"
-      }
-    },
-    {
-      "id": "alio-305778",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 전북사업처 배전자동화 통신공사 일용근로자 모집공고",
-      "field": "network",
-      "headcount": 1,
-      "location": "전북",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-10-07",
-      "closeDate": "2026-10-21",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 전북사업처 배전자동화 통신공사 일용근로자 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 전북 근무, 신입+경력, 채용인원 1명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "배전 또는 통신분야 경력자"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=305778",
-      "applicationFile": {
-        "name": "입사지원서.hwp",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3079319"
-      }
-    },
-    {
-      "id": "alio-305756",
-      "organization": "한전KDN",
-      "organizationShort": "KDN",
-      "color": "#0d4a8b",
-      "title": "한전KDN(주) 울산지사 배전분야 일용원 모집공고",
-      "field": "network",
-      "headcount": 2,
-      "location": "울산",
-      "employmentType": "비정규직",
-      "education": "학력무관",
-      "career": "신입+경력",
-      "careerLevel": "any",
-      "openDate": "2026-10-07",
-      "closeDate": "2026-10-21",
-      "salary": "신입 / 평균",
-      "summary": "한전KDN에서 진행하는 「한전KDN(주) 울산지사 배전분야 일용원 모집공고」 채용 공고입니다.",
-      "description": "한전KDN 울산 근무, 신입+경력, 채용인원 2명. 자세한 자격요건·전형절차는 알리오 공식 공고를 확인하세요.",
-      "qualifications": [
-        "학력: 학력무관",
-        "직무분야(NCS): 정보통신",
-        "채용구분: 신입+경력"
-      ],
-      "preferred": [
-        "모집공고문 내용 참조"
-      ],
-      "process": [
-        "서류전형",
-        "면접",
-        "최종합격"
-      ],
-      "alioUrl": "https://job.alio.go.kr/recruitview.do?idx=305756",
-      "applicationFile": {
-        "name": "입사지원서.hwpx",
-        "url": "https://www.alio.go.kr/download/download.json?fileNo=3079171"
-      }
-    },
     {
       "id": "alio-305819",
       "organization": "한전KDN",
